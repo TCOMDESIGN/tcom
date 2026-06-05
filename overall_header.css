@@ -1,0 +1,299 @@
+/* stats nuevos */
+ .ph-quote u,
+ .psm-quote u {
+     text-decoration: none;
+}
+ .ph-quote .chambstats-pj,
+ .psm-quote .chambstats-pj {
+     width: 470px;
+     display: flex;
+}
+ .ph-quote .chambstats-pj .chmy-stats,
+ .psm-quote .chambstats-pj .chmy-stats {
+     width: 55%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst {
+     width: 60px;
+     height: 40px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     position: relative;
+     color: #fff;
+     cursor: pointer;
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst:before,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst:before {
+     content: '\f72b';
+     font: 900 15px 'Font Awesome 6 Pro';
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst.chintelecto:before,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst.chintelecto:before {
+     content: '\f808';
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst.chfisico:before,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst.chfisico:before {
+     content: '\f6de';
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst.chsocial:before,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst.chsocial:before {
+     content: '\f4c6';
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst:hover:before,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst:hover:before {
+     color: var(--grupcolor);
+     animation: shake 0.4s ease;
+}
+ @keyframes shake {
+     0% {
+         transform: translateX(0);
+    }
+     20% {
+         transform: translateX(-2px);
+    }
+     40% {
+         transform: translateX(2px);
+    }
+     60% {
+         transform: translateX(-2px);
+    }
+     80% {
+         transform: translateX(2px);
+    }
+     100% {
+         transform: translateX(0);
+    }
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst:after,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst:after {
+     content: 'Magia';
+     position: absolute;
+     top: -15px;
+     opacity: 0;
+     transition: all 1s;
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst.chintelecto:after,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst.chintelecto:after {
+     content: 'Intelecto';
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst.chfisico:after,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst.chfisico:after {
+     content: 'Físico';
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst.chsocial:after,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst.chsocial:after {
+     content: 'Social';
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst>b,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst>b {
+     font-weight: bold;
+     color: var(--grupcolor);
+     font-size: 14px;
+     font-style: normal;
+     transform: scale(1);
+     transition: transform 0.3s ease;
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst:hover>b,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst:hover>b {
+     color: #fff;
+     transform: scale(1.2);
+     transition: transform 0.3s ease;
+}
+ .ph-quote .chambstats-pj .chmy-stats > .chmyst:hover:after,
+ .psm-quote .chambstats-pj .chmy-stats > .chmyst:hover:after {
+     top: -18px;
+     opacity: 1;
+     transition: all .5s;
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints,
+ .psm-quote .chambstats-pj .chmy-lifepoints {
+     width: 45%;
+     box-sizing: border-box;
+     padding-left: 15px;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     position: relative;
+     cursor: pointer;
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints .chamblifebar,
+ .psm-quote .chambstats-pj .chmy-lifepoints .chamblifebar {
+     width: 80%;
+     background: #000;
+     border: 1px solid #222;
+     height: 20px;
+     display: flex;
+     align-items: center;
+     -webkit-border-top-right-radius: 100px;
+     -webkit-border-bottom-right-radius: 100px;
+     -moz-border-radius-topright: 100px;
+     -moz-border-radius-bottomright: 100px;
+     border-top-right-radius: 100px;
+     border-bottom-right-radius: 100px;
+     position: relative;
+     padding: 2px;
+     overflow: hidden;
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints:before,
+ .psm-quote .chambstats-pj .chmy-lifepoints:before {
+     content: '';
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     background: #000;
+     border: 1px solid #222;
+     border-radius: 100%;
+     padding: 6px;
+     left: 9px;
+     z-index: 2;
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints:after,
+ .psm-quote .chambstats-pj .chmy-lifepoints:after {
+     content: '\f21e';
+     font: 900 13px 'Font Awesome 6 Pro';
+     position: absolute;
+     color: var(--grupcolor);
+     border-radius: 100%;
+     left: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     z-index: 2;
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints:hover:after,
+ .psm-quote .chambstats-pj .chmy-lifepoints:hover:after {
+     animation: beat 1s infinite;
+}
+ @keyframes beat {
+     0%, 100% {
+         transform: scale(1);
+    }
+     50% {
+         transform: scale(1.1);
+    }
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints .chamblifebar > .sublifebar,
+ .psm-quote .chambstats-pj .chmy-lifepoints .chamblifebar > .sublifebar {
+     width: 98%;
+     height: 10px;
+     -webkit-border-top-right-radius: 100px;
+     -webkit-border-bottom-right-radius: 100px;
+     -moz-border-radius-topright: 100px;
+     -moz-border-radius-bottomright: 100px;
+     border-top-right-radius: 100px;
+     border-bottom-right-radius: 100px;
+     background: var(--grupcolor);
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints>b,
+ .psm-quote .chambstats-pj .chmy-lifepoints>b {
+     width: 100px;
+     margin-left: 5px;
+     color: var(--grupcolor);
+     font: bold 16px var(--fuente1);
+     position: absolute;
+     left: 180px;
+     text-align: left;
+     font-style: normal;
+     transform: scale(1);
+     transition: transform 0.3s ease;
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints:hover>b,
+ .psm-quote .chambstats-pj .chmy-lifepoints:hover>b {
+     color: #fff;
+     transform: scale(1.1);
+     transition: transform 0.3s ease;
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints>b:before,
+ .psm-quote .chambstats-pj .chmy-lifepoints>b:before {
+     content: 'Puntos de Vida';
+     position: absolute;
+     width: 100px;
+     top: 18px;
+     left: -130px;
+     font-size: 9px;
+     color: #fff;
+     font-style: italic;
+     opacity: 0;
+     transition: all 1s;
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints:hover>b:before,
+ .psm-quote .chambstats-pj .chmy-lifepoints:hover>b:before {
+     top: 23px;
+     opacity: 1;
+     transition: all .5s;
+}
+ .ph-quote .chambstats-pj,
+ .psm-quote .chambstats-pj {
+     --stripes-size: 10px;
+     --stripe-color: rgba(255, 255, 255, 0.15);
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints .chamblifebar > .sublifebar,
+ .psm-quote .chambstats-pj .chmy-lifepoints .chamblifebar > .sublifebar {
+     position: relative;
+     background: var(--grupcolor);
+     overflow: hidden;
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints .chamblifebar > .sublifebar::before,
+ .psm-quote .chambstats-pj .chmy-lifepoints .chamblifebar > .sublifebar::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: calc(100% + var(--stripes-size));
+     height: 100%;
+     background: repeating-linear-gradient( 45deg, var(--stripe-color) 0%, var(--stripe-color) 25%, transparent 25%, transparent 50% );
+     background-size: var(--stripes-size) var(--stripes-size);
+     animation: animateStripesRight 2s linear infinite;
+     animation-play-state: paused;
+     opacity: 0;
+     transition: opacity 0.5s ease;
+     z-index: 1;
+     pointer-events: none;
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints:hover .chamblifebar > .sublifebar::before,
+ .psm-quote .chambstats-pj .chmy-lifepoints:hover .chamblifebar > .sublifebar::before {
+     animation-play-state: running;
+     opacity: 1;
+}
+ @keyframes animateStripesRight {
+     0% {
+         transform: translateX(-10px);
+    }
+     100% {
+         transform: translateX(0);
+    }
+}
+ .ph-quote .chambstats-pj .chmy-lifepoints .chamblifebar > .sublifebar > *,
+ .psm-quote .chambstats-pj .chmy-lifepoints .chamblifebar > .sublifebar > * {
+     position: relative;
+     z-index: 2;
+}
+
+/* Título Logros*/
+.chamb-titvent {
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    border-bottom: 1px solid #222;
+    font: 700 11px var(--fuente1);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.chamb-titvent:before {
+    content: '\f5a2';
+    font: 400 15px 'Font Awesome 6 Pro';
+    margin-right:5px;
+    color: var(--grupcolor);
+}
