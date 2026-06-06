@@ -1,0 +1,124 @@
+.rolecito2 {
+  width: 600px;
+  background-color: transparent;
+  padding: 50px;
+  border: 0.5px solid var(--acento);
+}
+
+.rolecito2 .text {
+  color: #bebebe;
+  font-size: 13.5px;
+  text-align: justify;
+  font-family: DM Sans;
+  line-height: 135%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.rolecito2 .text b {
+  color: var(--acento);
+  font-weight: 700;
+}
+
+.rolecito2 .text i {
+  color: var(--acento);
+}
+
+.rolecito2 .text strike {
+  text-decoration-color: var(--acento);
+}
+
+.rolecito2 .deco {
+  font-size: 19px;
+  color: var(--acento);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rolecito2 .deco:before {
+  content: '';
+  border-top: 1px solid var(--acento);
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+
+.rolecito2 .deco:after {
+  content: '';
+  border-top: 1px solid var(--acento);
+  margin: 0 0 0 20px;
+  flex: 1 0 20px;
+}
+
+.rolecito2 #header2 {
+  width: 595px;
+  height: 250px;
+  background: #00000;
+  padding: 0px;
+  border: 1px solid var(--acento);
+}
+
+.rolecito2 #header2 .img1 {
+  width: 100%;
+  height: 250px;
+  background: center/cover;
+  opacity: 0.9;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.rolecito2 .title {
+  color: var(--acento);
+  font-family: DM Sans;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.rolecito2 .info {
+  color: var(--acento);
+  font-family: DM Sans;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* Colores por categoría */
+
+.rolecito2.gryffindor {
+  --acento: #AB2628;
+}
+
+.rolecito2.hufflepuff {
+  --acento: #D6BF40;
+}
+
+.rolecito2.ravenclaw {
+  --acento: #5269B5;
+}
+
+.rolecito2.slytherin {
+  --acento: #4D8060;
+}
+
+.rolecito2.hogwarts {
+  --acento: #8A76AB;
+}
+
+.rolecito2.ministerio {
+  --acento: #9E4C7A;
+}
+
+.rolecito2.san-mungo {
+  --acento: #419EBA;
+}
+
+.rolecito2.magos-y-brujas {
+  --acento: #C2532E;
+}
