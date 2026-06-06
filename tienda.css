@@ -1,0 +1,174 @@
+body {
+  background: #080808;
+  margin:0;
+  padding:2rem;
+}
+
+
+.shop{
+  background:var(--bckg1);
+  color:var(--txt);
+  width:708px;
+  height:500px;
+  padding: 10px;
+  border:3px solid var(--border);
+  border-radius:5px;
+  margin:0 auto;
+  position:relative;
+  overflow:hidden;
+}
+.shop br, .shop input{
+  display:none;
+}
+.shop p br { display:block; }
+.shop label{
+  background:red;
+  width:125px;
+  display:inline-flex;
+  vertical-align:top;
+  align-items:center;
+  justify-content:center;
+  height:35px;
+  margin-right:10px;
+  font:11px 'Source Code Pro';
+  color: #ececec;
+  text-transform:uppercase;
+  font-weight:900;
+  letter-spacing:1px;
+  text-shadow:1px 1px 0px rgba(0,0,0,0.1), 1px -1px 0px rgba(0,0,0,0.1), -1px 1px 0px rgba(0,0,0,0.1), -1px -1px 0px rgba(0,0,0,0.1);
+  cursor:pointer;
+}
+.shop label[for="shop1"]{
+  background:var(--accent1);
+}
+.shop label[for="shop2"]{
+  background:var(--accent2);
+}
+.shop label[for="shop3"]{
+  background:var(--accent3);
+}
+.shop label[for="shop4"]{
+  background:var(--accent4);
+}
+.shop label[for="shop5"]{
+  margin-right:0;
+  background:var(--accent5);
+}
+.shop .txt{
+  background:var(--bckg1);
+  width:700px;
+  height:455px;
+  position:absolute;
+  bottom:-661px;
+  box-sizing:border-box;
+  border:1px solid var(--border);
+  transition:ease 1s;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex-direction:column;
+  overflow:auto;
+}
+.shop .item{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-grow:1;
+  flex-direction:row-reverse;
+  align-self:center;
+  background:var(--bckg2);
+  border:2px solid var(--border2);
+  border-radius:5px;
+  margin: 3px 3px;
+}
+.shop .item:first-of-type{
+  margin-top:5px;
+}
+.shop p{
+  margin: 1;
+  background:var(--bckg2);
+  flex-grow: 2;
+  align-self:stretch;
+  border:15px solid var(--bckg2);
+  font:11px 'Tahoma';
+  width:558px;
+  box-sizing:border-box;
+  overflow:auto;
+  text-align:justify;
+}
+.shop b{
+   background:var(--accent6);
+  font: Caladea;
+  font-size: 13px
+}
+.shop div {
+  display:flex;
+  flex-direction:column;
+  flex-grow:0;
+  align-self:stretch;
+  justify-content:center;
+  align-items:center;
+  border-left:0px solid var(--border);
+}
+
+
+
+
+.shop .item img{
+  background:var(--bckg2);
+  height:52px;
+  border-radius:100%;
+  padding:4px;
+  border:2px solid var(--border);
+}
+.shop .item m{
+  background:var(--accent6);
+  font:13px 'Calibri';
+  font-weight:900;
+  text-shadow:1px 1px 0px rgba(0,0,0,0.1), 1px -1px 0px rgba(0,0,0,0.1), -1px 1px 0px rgba(0,0,0,0.1), -1px -1px 0px rgba(0,0,0,0.1);
+  align-self:center;
+  margin:5px 5% ;
+  text-align:center;
+  padding:4px;
+  border-radius:5px;
+}
+.shop .item.oferta m{
+  background:var(--oferta);
+}
+.shop .item.oferta x{
+  text-decoration:line-through;
+}
+.shop .item.agotado m{
+  background:var(--agotado);
+}
+.shop .item.agotado img{
+  filter:var(--agotado-img);
+}
+
+
+
+
+.shop input#shop1:checked ~ .txt1, .shop input#shop2:checked ~ .txt2, .shop input#shop3:checked ~ .txt3, .shop input#shop4:checked ~ .txt4, .shop input#shop5:checked ~ .txt5   {
+  bottom:10px;
+}
+.shop input#shop1:checked ~ label[for="shop1"], .shop input#shop2:checked ~ label[for="shop2"], .shop input#shop3:checked ~ label[for="shop3"], .shop input#shop4:checked ~ label[for="shop4"], .shop input#shop5:checked ~ label[for="shop5"] {
+  background:var(--accent6);
+}
+.ncredit {
+ width: 400px;
+ text-align: center;
+ margin: 0 auto;
+ display: block;
+ font-size: 10px;
+ text-decoration: none;
+ font: 8px verdana;
+ color:#aaa; 
+}
+.shop + br + .ncredit {
+ margin-top: -15px;
+}
+.ncredit:before {
+ content: "©"; 
+}
+
+
