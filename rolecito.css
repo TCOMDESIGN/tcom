@@ -1,0 +1,102 @@
+.rolecito {
+  width: 600px;
+  background-color: transparent;
+  padding: 50px;
+  border: 1px solid var(--acento);
+  margin-bottom: 20px;
+}
+
+.rolecito .title {
+  color: var(--acento);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.rolecito .info {
+  color: var(--acento);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.rolecito .text {
+  color: #bebebe;
+  font-size: 13.5px;
+  text-align: justify;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 135%;
+  margin: 25px 0;
+}
+
+.rolecito .text b {
+  color: var(--acento);
+  font-weight: 700;
+}
+
+.rolecito .text i {
+  color: var(--acento);
+}
+
+.rolecito .text strike {
+  text-decoration-color: var(--acento);
+}
+
+.rolecito .deco {
+  font-size: 19px;
+  color: var(--acento);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rolecito .deco:before {
+  content: '';
+  border-top: 1px solid var(--acento);
+  margin-right: 20px;
+  flex: 1 0 20px;
+}
+
+.rolecito .deco:after {
+  content: '';
+  border-top: 1px solid var(--acento);
+  margin-left: 20px;
+  flex: 1 0 20px;
+}
+
+/* Colores por categoría */
+.rolecito.gryffindor {
+  --acento: #AB2628;
+}
+
+.rolecito.hufflepuff {
+  --acento: #D6BF40;
+}
+
+.rolecito.ravenclaw {
+  --acento: #5269B5;
+}
+
+.rolecito.slytherin {
+  --acento: #4D8060;
+}
+
+.rolecito.hogwarts {
+  --acento: #8A76AB;
+}
+
+.rolecito.ministerio {
+  --acento: #9E4C7A;
+}
+
+.rolecito.san-mungo {
+  --acento: #419EBA;
+}
+
+.rolecito.magos-y-brujas {
+  --acento: #C2532E;
+}
