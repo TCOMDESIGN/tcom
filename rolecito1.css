@@ -1,0 +1,121 @@
+.rolecito1 {
+  width: 600px;
+  background-color: transparent;
+  padding: 50px;
+  border: 0.5px solid var(--acento);
+  margin-bottom: 20px;
+}
+
+.rolecito1 .title {
+  color: var(--acento);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.rolecito1 .info {
+  color: var(--acento);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.rolecito1 .text {
+  color: #bebebe;
+  font-size: 13.5px;
+  text-align: justify;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 135%;
+  margin: 25px 0;
+}
+
+.rolecito1 .text b {
+  color: var(--acento);
+  font-weight: 700;
+}
+
+.rolecito1 .text i {
+  color: var(--acento);
+}
+
+.rolecito1 .text strike {
+  text-decoration-color: var(--acento);
+}
+
+.rolecito1 .deco {
+  font-size: 19px;
+  color: var(--acento);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rolecito1 .deco:before {
+  content: '';
+  border-top: 1px solid var(--acento);
+  margin-right: 20px;
+  flex: 1 0 20px;
+}
+
+.rolecito1 .deco:after {
+  content: '';
+  border-top: 1px solid var(--acento);
+  margin-left: 20px;
+  flex: 1 0 20px;
+}
+
+.rolecito1 #header1 {
+  width: 125px;
+  height: 125px;
+  background: var(--acento);
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid var(--acento);
+  margin: 0 auto;
+}
+
+.rolecito1 #header1 .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: center/cover;
+  opacity: 0.9; 
+  position: relative;
+}
+
+/* Colores por categoría */
+.rolecito1.gryffindor {
+  --acento: #AB2628;
+}
+
+.rolecito1.hufflepuff {
+  --acento: #D6BF40;
+}
+
+.rolecito1.ravenclaw {
+  --acento: #5269B5;
+}
+
+.rolecito1.slytherin {
+  --acento: #4D8060;
+}
+
+.rolecito1.hogwarts {
+  --acento: #8A76AB;
+}
+
+.rolecito1.ministerio {
+  --acento: #9E4C7A;
+}
+
+.rolecito1.san-mungo {
+  --acento: #419EBA;
+}
+
+.rolecito1.magos-y-brujas {
+  --acento: #C2532E;
+}
