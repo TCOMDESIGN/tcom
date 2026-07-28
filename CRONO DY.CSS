@@ -16,7 +16,7 @@
   background: var(--fondo);
   flex: 3;
   position: relative;
-  overflow: scroll;
+  overflow: auto;
   padding: 2em;
 }
 
@@ -81,7 +81,7 @@
   background: var(--fondo);
   border-left: var(--borde);
   transition-duration: .9s;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .chtab:after {
