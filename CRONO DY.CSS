@@ -16,7 +16,7 @@
   background: var(--fondo);
   flex: 3;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
   padding: 2em;
 }
 
