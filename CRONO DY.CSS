@@ -81,7 +81,7 @@
   background: var(--fondo);
   border-left: var(--borde);
   transition-duration: .9s;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .chtab:after {
