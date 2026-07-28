@@ -44,6 +44,15 @@
 .dos:before {content: '02';}
 .tres:before {content: '03';}
 .cuatro:before {content: '04';}
+.cinco:before {content: '05';}
+.seis:before {content: '06';}
+.siete:before {content: '07';}
+.ocho:before {content: '08';}
+.nueve:before {content: '09';}
+.diez:before {content: '10';}
+.once:before {content: '11';}
+.doce:before {content: '12';}
+
 
 .chtabsb label.tab span:before {
   content:'';
