@@ -6,7 +6,6 @@
   margin: 0 auto;
   border: var(--borde);
   position: relative;
-  overflow: scroll;
 }
 
 .chronomain br {
@@ -17,7 +16,7 @@
   background: var(--fondo);
   flex: 3;
   position: relative;
-  overflow: scroll;
+  overflow: auto;
   padding: 2em;
 }
 
