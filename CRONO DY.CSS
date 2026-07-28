@@ -26,12 +26,12 @@
 
 .chtabsb label { 
   display: block;
-  width: 40%; 
+  width: 45%; 
   font: 400 12px 'source sans pro';  
   line-height: 100%; 
   color: var(--texto);
   cursor: pointer;
-  margin: 5px 0;
+  margin: 3px 0;
 }
 
 .chtabsb label.tab:before {
